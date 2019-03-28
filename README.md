@@ -18,12 +18,12 @@ Now let's open package.json and insert the following:
 
 ```bash
     "scripts": {
-        "build" : "webpack --mode production"
-        "start:dev" : "webpack-dev-server --hot",
+        "build" : "webpack"
+        "start:dev" : "webpack-dev-server",
     },
 ```
     
-We can now use the command 'npm run build' in place of 'npx webpack --mode production,' and 'npm run start:dev' in place of 'npx webpack-dev-server --hot.'
+We can now use the command 'npm run build' in place of 'npx webpack,' and 'npm run start:dev' in place of 'npx webpack-dev-server.'
 
-As in exercise 2, in index.html our script src points to 'main.js,' but we can change that './dist/main.js' when we want to deploy the production build of our app.
+As in exercise 2, in index.html our script src points to 'main.js,' but we can change that './dist/main.js' when we want to deploy the production build of our page or app.
 
